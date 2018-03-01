@@ -5,224 +5,590 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Emrah_Demirag a Onepage Portfolio Flat Bootstrap Responsive Website Template| Home :: w3layouts</title>
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Emrah_Demirag Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<script src="js/jquery.min.js"> </script>
-<!--web_fonts-->
-<link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Vollkorn:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
-<!--/web_fonts-->
-<!--start-smoth-scrolling-->
-		<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
-				});
+	<title>Designer a Personal Category Bootstrap Responsive Template | Home :: w3layouts</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Designer Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- Custom Theme files -->
+	<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+	<!--gallery -->
+	<link type="text/css" rel="stylesheet" href="css/cm-overlay.css" />
+	<!-- //gallery -->
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<!-- font-awesome icons -->
+	<!--//Custom Theme files-->
+	<!-- js -->
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<!-- //js -->
+	<!-- web-fonts -->
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Arsenal:400,400i,700,700i" rel="stylesheet">
+	<!-- //web-fonts -->
+</head>
+
+<body>
+	<!-- banner -->
+	<div id="home" class="banner">
+		<div class="banner-agileinfo">
+			<!-- header -->
+			<div class="header">
+				<div class="container">
+					<div class="menu">
+						<a href="" id="menuToggle"> <span class="navClosed"></span> </a>
+						<nav>
+							<a href="#home" class="active scroll">Home</a>
+							<a href="#about" class="scroll">About Me</a>
+							<a href="#skills" class="scroll">Skills</a>
+							<a href="#gallery" class="scroll">Photos</a>
+							<!--<a href="#services" class="scroll">Services</a>-->
+							<a href="#contact" class="scroll">Contact</a>
+						</nav>
+						<script>
+							(function ($) {
+								// Menu Functions
+								$(document).ready(function () {
+									$('#menuToggle').click(function (e) {
+										var $parent = $(this).parent('.menu');
+										$parent.toggleClass("open");
+										var navState = $parent.hasClass('open') ? "hide" : "show";
+										$(this).attr("title", navState + " navigation");
+										// Set the timeout to the animation length in the CSS.
+										setTimeout(function () {
+											console.log("timeout set");
+											$('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+										}, 200);
+										e.preventDefault();
+									});
+								});
+							})(jQuery);
+						</script>
+
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!-- //header -->
+			<div class="banner-text">
+				<div class="container">
+					<h1><a href="index.html">Nikhil</a></h1>
+					<h2 class="w3ls-bnrtext"><!-- I am --><span><!-- Software --></span><span> </span><!--  Engineer--></h2>
+					<p class="w3ls-p">a software developer with the passion for innovation</p>
+					<a href="#about" class="buy btn-wayra scroll">Explore</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //banner -->
+	<!-- about -->
+	<div class="agile-about w3ls-section text-center" id="about">
+		<div class="container">
+			<h3 class="agileits-title">about me</h3>
+			<div class="agileits-about-grid">
+				<p>Nikhil is a Graduate Computer Science Student in California State University,
+					 Dominguez Hills. Previously, worked as Senior Software Developer in Gilbarco Veeder Root.
+					  He is passionate about Cloud Technologies and Machine Learning. Nikhil is AWS Certified SysOps Administartor.
+						In his free time he loves trekking and cycling with his friends. .</p>
+			</div>
+			<a href="#contact" class="wthree- about-link scroll">hire me</a>
+		</div>
+	</div>
+	<!-- //about -->
+	<!-- about-bottom -->
+	<div class="agileits-about-btm">
+		<div class="container">
+			<div class="w3-flex">
+			<div class="col-md-4 col-sm-4 col-xs-12 ab1 agileits-about-grid1">
+				<span class="fa fa-trophy" aria-hidden="true"></span>
+				<h4 class="agileinfo-head">awards</h4>
+				<h5>StarZ Award</h5>
+				<p>For Automating Cloud Testing Scenarios in Gilbarco Veeder Root.</p>
+				<h5>StarZ Award</h5>
+				<p>Remote Management project in Gilbarco Veeder Root</p>
+			<!--	<h5>premier UX award</h5>
+				<p>Ncididunt ut labore et t enim ad minim.</p> -->
+			</div>
+			<div class="col-md-4 col-sm-4 ab1 agileits-about-grid2">
+				<span class="fa fa-graduation-cap  wthree-title-list" aria-hidden="true"></span>
+				<h4 class="agileinfo-head">education</h4>
+				<h5>MS in Computer Science</h5>
+				<p>California State University, Dominguez Hills</p>
+				<h5>Bachelors in Computer science</h5>
+				<p>Pune University.</p>
+				<h5>High School</h5>
+				<p>K. T. H. M. College</p>
+			</div>
+			<div class="col-md-4 col-sm-4 ab1 agileits-about-grid3">
+				<span class="fa fa-shield  wthree-title-list" aria-hidden="true"></span>
+				<h4 class="agileinfo-head">expertise</h4>
+				<h5>Programming languages</h5>
+				<p>Java, NodeJs, AngularJs, SQL, JavaScript, Ansible</p>
+				<h5>Databases</h5>
+				<p>MySQL, ElasticSearch, Redis, AWS DynamoDB</p>
+				<h5>Tools and Platforms</h5>
+				<p>Amazon Web Services, Linux, Windows, ActiveMQ, Agile Software Development, Eclipse,
+SSL/TLS, Git, Atlassian Jira, Problem Solving Skills, Jenkins, Docker</p>
+			</div>
+			<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!-- //about-bottom -->
+	<!-- skills -->
+	<div class="agile-service w3ls-section" id="skills">
+		<div class="container">
+			<div class="col-md-5 w3_agileits-service-left">
+				<h3 class="agileits-title">skills</h3>
+				<p>Implementing scalable and reliable software with up-to-the-minute technologies is what I love,
+I have experience for designing and development of software in cloud technologies.
+Learning to become a full stack developer.
+Currently, I am pursuing my Master's in Computer Science at California State University,
+Dominguez Hills And working as a Graduate Teaching Assistant in the University for Java programming language.
+Previously, worked as Senior Software Developer in Gilbarco Veeder Root, I had the opportunity to work with Amazing people in cloud Team.
+We build web applications for fueling retail solutions on Amazon Web Services.
+Specialties: Software Development, Java, Amazon Web Services, Continues Integration (Jenkins), nodeJS, Database Design, AngularJS.</p>
+			</div>
+			<div class="col-md-7 skills-right">
+				<div class="vertical-skills  pull-right xs-center">
+					<ul class="list-inline">
+						<li>
+							<div class="skill" style="height:100%; background:#ff9d0d;"><span class="value">100%</span></div><span class="title">AWS</span></li>
+						<li>
+							<div class="skill" style="height:90%; background:#03a9f4;"><span class="value">90%</span></div><span class="title">Java</span></li>
+						<li>
+							<div class="skill" style="height:80%; background:#b32eca;"><span class="value">80%</span></div><span class="title">NodeJs</span></li>
+						<li>
+							<div class="skill" style="height:75%; background:#009688;"><span class="value">75%</span></div><span class="title">Jenkins</span></li>
+						<li>
+							<div class="skill" style="height:85%; background:#6361f0;"><span class="value">85%</span></div><span class="title">ElasticSearch</span></li>
+
+					</ul>
+				</div>
+
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<div class="w3ls-section agileits-gallery" id="gallery">
+		<div class="container">
+			<h3 class="agileits-title">the highways and byways</h3>
+			<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+			<!--	<ul id="myTab" class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a href="#home-main" id="home-tab" role="tab" data-toggle="tab" aria-controls="home-main" aria-expanded="true">Show all</a></li>
+					<li role="presentation"><a href="#learning" role="tab" id="learning-tab" data-toggle="tab" aria-controls="learning">Web design</a></li>
+					<li role="presentation"><a href="#playing" role="tab" id="playing-tab" data-toggle="tab" aria-controls="playing">Photography</a></li>
+					<li role="presentation"><a href="#painting" role="tab" id="painting-tab" data-toggle="tab" aria-controls="painting">Illustration</a></li>
+				</ul> -->
+				<div id="myTabContent" class="tab-content">
+					<div role="tabpanel" class="tab-pane fade in active" id="home-main" aria-labelledby="home-tab">
+						<div class="w3_tab_img">
+							<div class="col-sm-3 w3_tab_img_left">
+								<div class="demo">
+									<a class="cm-overlay" href="images/g1.jpg">
+										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g1.jpg" alt=" " class="img-responsive" />
+										</figure>
+									</a>
+								</div>
+								<div class="agile-gallery-info">
+									<h5>cucamonga peak</h5>
+									<p>Angeles National Park</p>
+								</div>
+							</div>
+							<div class="col-sm-3 w3_tab_img_left">
+								<div class="demo">
+									<a class="cm-overlay" href="images/g2.jpg">
+										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g2.jpg" alt=" " class="img-responsive" />
+										</figure>
+									</a>
+								</div>
+								<div class="agile-gallery-info">
+									<h5>Shrivardhan Beach</h5>
+									<p>Raigad District</p>
+								</div>
+							</div>
+							<div class="col-sm-3 w3_tab_img_left">
+								<div class="demo">
+									<a class="cm-overlay" href="images/g3.jpg">
+										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g3.jpg" alt=" " class="img-responsive" />
+										</figure>
+									</a>
+								</div>
+								<div class="agile-gallery-info">
+									<h5>mount whitney</h5>
+									<p>California</p>
+								</div>
+							</div>
+							<div class="col-sm-3 w3_tab_img_left">
+								<div class="demo">
+									<a class="cm-overlay" href="images/g4.jpg">
+										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g4.jpg" alt=" " class="img-responsive" />
+										</figure>
+									</a>
+								</div>
+								<div class="agile-gallery-info">
+									<h5>red rock canyon</h5>
+									<p>Las Vegas</p>
+								</div>
+							</div>
+							<div class="col-sm-3 w3_tab_img_left">
+								<div class="demo">
+									<a class="cm-overlay" href="images/g5.jpg">
+										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g5.jpg" alt=" " class="img-responsive" />
+										</figure>
+									</a>
+								</div>
+								<div class="agile-gallery-info">
+									<h5>Zion National Park</h5>
+									<p>Utah</p>
+								</div>
+							</div>
+							<div class="col-sm-3 w3_tab_img_left">
+								<div class="demo">
+									<a class="cm-overlay" href="images/g6.jpg">
+										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g6.jpg" alt=" " class="img-responsive" />
+										</figure>
+									</a>
+								</div>
+								<div class="agile-gallery-info">
+									<h5>laguna beach</h5>
+									<p>California</p>
+								</div>
+							</div>
+							<div class="col-sm-3 w3_tab_img_left">
+								<div class="demo">
+									<a class="cm-overlay" href="images/g7.jpg">
+										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g7.jpg" alt=" " class="img-responsive" />
+										</figure>
+									</a>
+								</div>
+								<div class="agile-gallery-info">
+									<h5>Grand canyon</h5>
+									<p>Arizona</p>
+								</div>
+							</div>
+							<div class="col-sm-3 w3_tab_img_left">
+								<div class="demo">
+									<a class="cm-overlay" href="images/g8.jpg">
+										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g8.jpg" alt=" " class="img-responsive" />
+										</figure>
+									</a>
+								</div>
+								<div class="agile-gallery-info">
+									<h5>Long Beach</h5>
+									<p>California</p>
+								</div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="learning" aria-labelledby="learning-tab">
+						<div class="w3_tab_img">
+							<div class="col-sm-3 w3_tab_img_left">
+								<div class="demo">
+									<a class="cm-overlay" href="images/g2.jpg">
+										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g2.jpg" alt=" " class="img-responsive">
+										</figure>
+									</a>
+								</div>
+								<div class="agile-gallery-info">
+									<h5>My project</h5>
+									<p>Eleifend</p>
+								</div>
+							</div>
+							<div class="col-sm-3 w3_tab_img_left">
+								<div class="demo">
+									<a class="cm-overlay" href="images/g3.jpg">
+										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g3.jpg" alt=" " class="img-responsive">
+										</figure>
+									</a>
+								</div>
+								<div class="agile-gallery-info">
+									<h5>My project</h5>
+									<p>Pulvinar</p>
+								</div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="playing" aria-labelledby="playing-tab">
+						<div class="w3_tab_img">
+							<div class="col-sm-3 w3_tab_img_left">
+								<div class="demo">
+									<a class="cm-overlay" href="images/g4.jpg">
+										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g4.jpg" alt=" " class="img-responsive">
+										</figure>
+									</a>
+								</div>
+								<div class="agile-gallery-info">
+									<h5>My project</h5>
+									<p>Blandit</p>
+								</div>
+							</div>
+							<div class="col-sm-3 w3_tab_img_left">
+								<div class="demo">
+									<a class="cm-overlay" href="images/g1.jpg">
+										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g1.jpg" alt=" " class="img-responsive">
+										</figure>
+									</a>
+								</div>
+								<div class="agile-gallery-info">
+									<h5>My project</h5>
+									<p>Vivamus</p>
+								</div>
+							</div>
+							<div class="col-sm-3 w3_tab_img_left">
+								<div class="demo">
+									<a class="cm-overlay" href="images/g2.jpg">
+										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g3.jpg" alt=" " class="img-responsive">
+										</figure>
+									</a>
+								</div>
+								<div class="agile-gallery-info">
+									<h5>My project</h5>
+									<p>Eleifend</p>
+								</div>
+							</div>
+							<div class="col-sm-3 w3_tab_img_left">
+								<div class="demo">
+									<a class="cm-overlay" href="images/g3.jpg">
+										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g2.jpg" alt=" " class="img-responsive">
+										</figure>
+									</a>
+								</div>
+								<div class="agile-gallery-info">
+									<h5>My project</h5>
+									<p>Blandit</p>
+								</div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="painting" aria-labelledby="painting-tab">
+						<div class="w3_tab_img">
+							<div class="col-sm-3 w3_tab_img_left">
+								<div class="demo">
+									<a class="cm-overlay" href="images/g1.jpg">
+										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g1.jpg" alt=" " class="img-responsive">
+										</figure>
+									</a>
+								</div>
+								<div class="agile-gallery-info">
+									<h5>My project</h5>
+									<p>Ornare </p>
+								</div>
+							</div>
+							<div class="col-sm-3 w3_tab_img_left">
+								<div class="demo">
+									<a class="cm-overlay" href="images/g2.jpg">
+										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g2.jpg" alt=" " class="img-responsive">
+										</figure>
+									</a>
+								</div>
+								<div class="agile-gallery-info">
+									<h5>My project</h5>
+									<p>Pulvinar</p>
+								</div>
+							</div>
+							<div class="col-sm-3 w3_tab_img_left">
+								<div class="demo">
+									<a class="cm-overlay" href="images/g3.jpg">
+										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g3.jpg" alt=" " class="img-responsive">
+										</figure>
+									</a>
+								</div>
+								<div class="agile-gallery-info">
+									<h5>My project</h5>
+									<p>Vulputate</p>
+								</div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery.tools.min.js"></script>
+		<script src="js/jquery.mobile.custom.min.js"></script>
+		<script src="js/jquery.cm-overlay.js"></script>
+		<script>
+			$(document).ready(function () {
+				$('.cm-overlay').cmOverlay();
 			});
 		</script>
-<!--start-smoth-scrolling-->
-</head>
-<body>
-<!--header-->
-<div id="home" class="banner">
-	<div class="container">
-		<div class="label-1"> </div>
-		<div class="top-menu">
-		<span class="menu"> </span>
-			<ul class="nav">
-					<li><a class="scroll" href="#home">HOME</a></li>
-					<li><a class="scroll" href="#about">ABOUT</a></li>
-					<li><a class="scroll" href="#work">WORK</a></li>
-					<li><a class="scroll" href="#contact">CONTACT</a></li>
-				</ul>
-				<div class="logo">
-					<a href="#"><img src="images/logo.png" /></a>
+	</div>
+	<!-- //menu -->
+	<!-- services -->
+	<!--
+	<div class="w3ls-section services" id="services">
+		<div class="container">
+			<h3 class="agileits-title text-center">services</h3>
+			<div class="services-w3ls-row agileits-w3layouts service1 text-center">
+				<h5>web design</h5>
+				<p>Tenetur a sapiente itaque earum rerum hic delectus maiores alias phasellus.</p>
+				<div class="s-top">
+					<span class="fa fa-laptop" aria-hidden="true"></span>
+				</div>
+			</div>
+			<div class="services-w3ls-row agileits-w3layouts middlegrid-w3ls">
+				<div class="col-md-4 services-grid agileits-w3layouts service2">
+					<div class="col-md-10 w3ls-sub-text">
+						<h5>ui design</h5>
+						<p>Tenetur a sapiente itaque earum rerum hic delectus maiores alias phasellus.</p>
+					</div>
+					<div class="col-md-2 sub-icon">
+						<span class="fa fa-caret-square-o-up" aria-hidden="true"></span>
+					</div>
+				</div>
+				<div class="col-md-4 services-grid img-agileits">
+					<img src="images/services.jpg" class="img-responsive" alt="" />
+				</div>
+				<div class="col-md-4 services-grid agileits-w3layouts service3">
+					<div class="col-md-2 sub-icon">
+						<span class="fa fa-grav" aria-hidden="true"></span>
+					</div>
+					<div class="col-md-10 w3ls-sub-text">
+						<h5>graphic design</h5>
+						<p>Tenetur a sapiente itaque earum rerum hic delectus maiores alias phasellus.</p>
+					</div>
 				</div>
 				<div class="clearfix"> </div>
+			</div>
+			<div class="services-w3ls-row agileits-w3layouts service4">
+				<div class="s-top">
+					<span class="fa fa-adjust" aria-hidden="true"></span>
+				</div>
+				<h5>seo</h5>
+				<p>Tenetur a sapiente itaque earum rerum hic delectus maiores alias phasellus.</p>
+			</div>
+		</div>
 	</div>
-			 <!-- script-for-menu -->
-		 <script>
-				$("span.menu").click(function(){
-					$(".top-menu ul").slideToggle("slow" , function(){
-					});
-				});
-		 </script>
-		 <!-- script-for-menu -->
-			<div id="banner-top" class="banner-top">
-				<h1><span class="left-icon"> </span>NIKHIL R DEORE<span class="right-icon"> </span><div class="clearfix"> </div></h1>
-				<h2><span class="left-icon"> </span>STUDENT<span class="right-icon"> </span><div class="clearfix"> </div></h2>
+-->
+	<!-- //services -->
+	<!-- contact -->
+	<div class="contact-w3-agileits w3ls-section" id="contact">
+		<div class="container">
+			<h3 class="agileits-title cont-w3l">Feel free to contact me</h3>
+			<div class="contact-main-w3ls">
+				<div class="col-md-6  contact-left-w3ls">
+					<div class="mail contact-grid-agileinfo">
+						<div class="col-md-4 col-sm-4 col-xs-4 contact-icon-wthree">
+							<h4>Mail me</h4>
+						</div>
+						<div class="col-md-8  col-sm-8 col-xs-8 contact-text-agileinfo">
+							<a href="mailto:deorenik@gmail.com">deorenik@gmail.com</a><br>
+							<!--<a href="mailto:info@example.com">w3ls@example.com</a>-->
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="call contact-grid-agileinfo">
+						<div class="col-md-4 col-sm-4 col-xs-4 contact-icon-wthree">
+							<h4>Phone</h4>
+						</div>
+						<div class="col-md-8 col-sm-8 col-xs-8 contact-text-agileinfo">
+							<p>+14242667931</p>
+
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="contact-grid-agileinfo">
+						<div class="col-md-4 col-sm-4 col-xs-4 contact-icon-wthree">
+							<h4>Address</h4>
+						</div>
+						<div class="col-md-8 col-sm-8 col-xs-8 contact-text-agileinfo">
+							<p>5050 E Garford st apt#153<br> Long Beach, CA 90815<br> USA.
+							</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="visit wthree-social-icons contact-grid-agileinfo">
+						<div class="col-md-4 col-sm-4 col-xs-4 contact-icon-wthree">
+							<h4>Follow me</h4>
+						</div>
+						<div class="col-md-8 col-sm-8 col-xs-8 contact-text-agileinfo">
+							<ul class="w3-links">
+								<li><a href="https://www.facebook.com/deorenik"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://twitter.com/Imdeorenik?lang=en"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="https://www.linkedin.com/in/nikhil-deore-22640485/"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="https://plus.google.com/u/0/117254109405090827703"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="contact-main">
+					<div class="col-md-6 agileits-main-right">
+						<form action="#" method="post" class="agile_form">
+							<label class="header">Name</label>
+							<div class="icon1 w3ls-name1">
+								<input placeholder=" " name="first name" type="text" required="">
+							</div>
+							<div class="icon2">
+								<label class="header">Email</label>
+								<input placeholder=" " name="Email" type="email" required="">
+							</div>
+							<label class="header">your message</label>
+							<textarea class="w3l_summary" required=""></textarea>
+							<input type="submit" value="SEND">
+						</form>
+					</div>
+					<div class="clearfix"></div>
+				</div>
 			</div>
-		<div class="header-icons">
-			<a href="https://www.facebook.com/deorenik"><span class="fb"> </span></a>
-			<a href="https://www.linkedin.com/in/nikhil-deore-22640485"><span class="likdin"> </span></a>
-			<a href="https://github.com/deorenikhil"><span class="be"> </span></a>
-		 </div>
-</div>
-</div>
-<!--/header-->
-<!--work-->
-<div id="work" class="work">
-	<div class="container">
-		<div class="label-3"> </div>
-		<div class="label-4"> </div>
-		<h3><span class="left-icon"> </span>ZEAL<span class="right-icon"> </span><div class="clearfix"> </div></h3>
-		<p>"It is our choices, Harry, that show what we truly are, far more than our abilities.”</p>
-		<!--Portfolio-->
-	<div class="project">
-					<div id="portfoliolist">
-						<div class="portfolio" style="display: inline-block; opacity: 1;">
-							<div class="portfolio-wrapper">
-								<a href="images/p1.jpg" class="b-link-stripe b-animate-go   swipebox"  title="Image Title">
-							     <img src="images/p1.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">Processing Steps Web<img src="images/logo.png" /></h2>
-							  	 </div></a>
-			                </div>
-						</div>
-						<div class="portfolio"  style="display: inline-block; opacity: 1;">
-							<div class="portfolio-wrapper">
-								<a href="images/p2.jpg" class="b-link-stripe b-animate-go   swipebox"  title="Image Title">
-							     <img src="images/p2.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">Processing Steps Web<img src="images/logo.png" /></h2>
-							  	 </div></a>
-			               	</div>
-						</div>
-						<div class="portfolio"  style="display: inline-block; opacity: 1;">
-							<div class="portfolio-wrapper">
-								<a href="images/p3.jpg" class="b-link-stripe b-animate-go   swipebox"  title="Image Title">
-							     <img src="images/p3.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">Processing Steps Web<img src="images/logo.png" /></h2>
-							  	 </div></a>
-			                </div>
-						</div>
-						<div class="portfolio"  style="display: inline-block; opacity: 1;">
-							<div class="portfolio-wrapper">
-								<a href="images/p4.jpg" class="b-link-stripe b-animate-go   swipebox"  title="Image Title">
-							     <img src="images/p4.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">Processing Steps Web<img src="images/logo.png" /></h2>
-							  	 </div></a>
-			                </div>
-						</div>
-						 <div class="portfolio"  style="display: inline-block; opacity: 1;">
-							<div class="portfolio-wrapper">
-								<!-- <a href="images/p5.jpg" class="b-link-stripe b-animate-go   swipebox"  title="Image Title">
-							     <img src="images/p5.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">Processing Steps Web<img src="images/logo.png" /></h2>
-							  	 </div></a>
-			                </div>
-						</div>
-						<div class="portfolio"  style="display: inline-block; opacity: 1;">
-							<div class="portfolio-wrapper">
-								<a href="images/p6.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title">
-							     <img src="images/p6.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">Processing Steps Web<img src="images/logo.png" /></h2>
-							  	 </div></a>
-			                </div>
-			            </div>
-			            <div class="portfolio"  style="display: inline-block; opacity: 1;">
-							<div class="portfolio-wrapper">
-								<a href="images/p7.jpg" class="b-link-stripe b-animate-go   swipebox"  title="Image Title">
-							     <img src="images/p7.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">Processing Steps Web<img src="images/logo.png" /></h2>
-							  	 </div></a>
-			                </div>
-						</div>
-						<div class="portfolio"  style="display: inline-block; opacity: 1;">
-							<div class="portfolio-wrapper">
-								<a href="images/p8.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title">
-							     <img src="images/p8.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">Processing Steps Web<img src="images/logo.png" /></h2>
-							  	 </div></a>
-								 -->   </div>
-			            </div>
-									<br></br>
-									<br></br>
-									<br></br>
-									<br></br>
-									<br></br>
-									<br></br>
-									<br></br>
-									<br></br>
-									<br></br>
-									<br></br>
-			            <div class="clearfix"> </div>
-			</div>
-</div>
-	<link rel="stylesheet" href="css/swipebox.css">
-	<script src="js/jquery.swipebox.min.js"></script>
-	    <script type="text/javascript">
-			jQuery(function($) {
-				$(".swipebox").swipebox();
+		</div>
+	</div>
+	<!-- //contact -->
+	<div class="agileits_w3layouts-footer">
+		<p>© 2017 Designer. All rights reserved | Design by <a href="http://w3layouts.com"> W3layouts.</a></p>
+	</div>
+	<!-- start-smooth-scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
 			});
-		</script>
-<!--/Portfolio-->
-	</div>
-</div>
-<!--/work-->
-<!--about-->
-<div id="about" class="about">
-	<div class="container">
-		<div class="label-5"> </div>
-		<div class="label-6"> </div>
-		<h3><span class="left-icon"> </span>ABOUT<span class="right-icon">  </span><div class="clearfix"> </div></h3>
-		<p>Those who don't believe in magic will never find it.</p>
-		<div class="about-info">
-			<div class="col-md-6 about-left">
-				<img src="images/about.jpg" class="img-responsive" alt=""/>
-			</div>
-			<div class="col-md-6 about-right">
-				<p>Nikhil is a Graduate Computer Science Student in California State University,
-					 Dominguez Hills. Previously, worked as Senior Software Developer in
-					Gilbarco Veeder Root. He is passionate about Cloud Technologies and Machine Learning. Nikhil is AWS Certified SysOps Administartor.
-					 In his free time he loves trekking and cycling with his friends.  </p>
-				<!--	<div class="about-icons">
-						<a href="#"><span class="fb"> </span></a>
-						<a href="#"><span class="tw"> </span></a>
-						<a href="#"><span class="pin"> </span></a>
-						<a href="#"><span class="likdin"> </span></a>
-						<a href="#"><span class="dribble"> </span></a>
-						<a href="#"><span class="be"> </span></a>
-					</div> -->
-			</div>
-			 <div class="clearfix"> </div>
-		</div>
-	</div>
-</div>
-<!--/about-->
-<!--contact-->
-<div id="contact" class="contact">
-	<div class="container">
-		<div class="label-7"> </div>
-		<div class="label-8"> </div>
-		<h3><span class="left-icon"> </span>CONTACT<span class="right-icon"> </span><div class="clearfix"> </div></h3>
-		<p>'Que Sera, Sera'</p>
-		<div class="conatct-form">
-			<p>Email: deorenik@gmail.com</p>
-		</div>
-		<div class="copyrights">
-		<p>Copyrights &copy; 2015 Example All rights reserved | Template by <a href="http://w3layouts.com/">W3layouts</a></p>
-		</div>
-		<script type="text/javascript">
-									$(document).ready(function() {
-										/*
-										var defaults = {
-								  			containerID: 'toTop', // fading element id
-											containerHoverID: 'toTopHover', // fading element hover id
-											scrollSpeed: 1200,
-											easingType: 'linear'
-								 		};
-										*/
+		});
+	</script>
+	<!-- //end-smooth-scrolling -->
+	<!-- smooth-scrolling-of-move-up -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+			};
+			*/
 
-										$().UItoTop({ easingType: 'easeOutQuart' });
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
 
-									});
-								</script>
-		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-	</div>
-</div>
-<!--/contact-->
-<!--copy-rights-->
-
-<!--copy-rights-->
+		});
+	</script>
+<script type="text/javascript" src="js/SmoothScroll.min.js"></script>
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="js/bootstrap.js"></script>
 </body>
 </html>
